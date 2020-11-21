@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .heart {
+      width: 155px;
+      height: 160px;
+      display: block;
+      position: relative;
+      background: url("images/heart.png");
+      background-position: -0 top;
+    }
+    .heart-2{
+      width: 140px;
+      height: 160px;
+      display: block;
+      position:absolute;
+      left:0;
+      top:0;
+      background: url("images/heart.png");
+      background-position: -320px top;
+      animation: step2 1s steps(1) alternate infinite;
+    }
+    .heart-3 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position:absolute;
+      left:-20px;
+      top:0;
+      background: url("images/heart.png");
+      background-position: -640px top;
+      animation: step3 1s steps(1) alternate infinite;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-fill-mode: backwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+
+    /* @keyframes spin {
+    %{transform: rotate(0deg);}
+    100%{transform: rotate(180deg);}
+    } */
+    @keyframes step2 {
+      0% {background-position: -955px top;}
+      33% {background-position: -1274px top;}
+      /* 66% {background-position: -640px top;} */
+    }
+
+    @keyframes step3 {
+      0% {background-position: -293px top;}
+      33% {background-position: -610px top;}
+    }
+
+    @keyframes heart {
+      from {top: 0px; left:30px;}
+      to {top: 300px; left:30px; background-color: #DC143C;}
+    }
+
+
+  .deb {
+    width: 381px;
+    height: 381px;
+    display: block;
+    position: relative;
+    background: url("images/deb.png");
+    background-position: -0 top;
+    animation: spin 3s infinite;
+  }
+  .deb2{
+    width: 381px;
+    height: 381px;
+    display: block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    background: url("images/deb.png");
+    background-position: -381px top;
+    animation: deb2 1s steps(1) alternate infinite;
+  }
+  .deb3 {
+    width: 351px;
+    height: 381px;
+    display:block;
+    position:absolute;
+    left:-20px;
+    top:0px;
+    background: url("images/deb.png");
+    background-position: -782px top;
+    animation: deb3 1s steps(1) alternate infinite;
+  }
+
+  @keyframes deb2 {
+    0% {background-position: -351px top;}
+    33% {background-position: -628px top;}
+    66% {background-position: -1213px top;}
+  }
+
+  @keyframes deb3 {
+    0% {background-position: -1524px top;}
+    33% {background-position: -1905px top;}
+    66% {background-position: -2486px top;}
+  }
+
+  @keyframes spin {
+  %{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+  }
+
+  .deb:hover .deb2, .deb:hover .deb3 {
+    animation-play-state: paused;
+  }
+
+
+    .heartbroke {
+      width: 155px;
+      height: 210px;
+      display: block;
+      position: relative;
+      background: url("images/heartbroke.png");
+      background-position: -0 top;
+      animation: rotate 1s steps(1) infinite;
+    }
+    .hb3 {
+      width: 148px;
+      height: 210px;
+      display:block;
+      position:absolute;
+      left:0px;
+      top:0px;
+      background: url("images/heartbroke.png");
+      background-position: -210px top;
+      animation: hb3 1s steps(1) alternate infinite;
+    }
+
+    @keyframes hb3 {
+      0% {background-position: -620px top;}
+      33% {background-position: -340px top;}
+      66% {background-position: -968px top;}
+    }
+
+  .heartbroke:hover {
+    transform: scale(0.5);
+  }
+
+  .star {
+    width: 250px;
+    height: 250px;
+    left:50px;
+    display: block;
+    position: relative;
+    background: url("images/star.png");
+    background-position: -0 top;
+  }
+  .star2 {
+    width: 200px;
+    height: 200px;
+    display:block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    background: url("images/star.png");
+    background-position: -750px top;
+    animation: star2 1s steps(1) alternate infinite;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .star3 {
+    width: 250px;
+    height: 250px;
+    display:block;
+    position:absolute;
+    left:-20px;
+    top:0px;
+    background: url("images/star.png");
+    background-position: -250px top;
+    animation: star3 1s steps(1) alternate infinite;
+  }
+
+  @keyframes star2 {
+    0% {background-position: -630px top;}
+    50% {background-position: -985px top;}
+    50%  {background-color:green; left:300px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  @keyframes star3 {
+    0% {background-position: -305px top;}
+    100% {background-position: -630px top;}
+  }
+
+  .star:hover .star2, .star:hover .star3 {
+    animation-play-state: paused;
+  }
+
+  .crazy {
+    width: 179px;
+    height: 179px;
+    left:60px;
+    display: block;
+    position: absolute;
+    background: url("images/crazy.png");
+    background-position: -0 top;
+  }
+  .crazy2{
+    width: 150px;
+    height: 179px;
+    display: block;
+    position:absolute;
+    left:0px;
+    top:10px;
+    background: url("images/crazy.png");
+    background-position: -716px top;
+    animation: crazy2 1s steps(1) alternate infinite;
+  }
+  .crazy3 {
+    width: 179px;
+    height: 179px;
+    display:block;
+    position:absolute;
+    left:-20px;
+    top:10px;
+    background: url("images/crazy.png");
+    background-position: -179px top;
+    animation: crazy3 1s steps(1) alternate infinite;
+
+  }
+
+  @keyframes crazy2 {
+    0% {background-position: -1290px top;}
+    33% {background-position: -1610px top;}
+    66% {background-position: -1927px top;}
+  }
+
+  @keyframes crazy3 {
+    0% {background-position: -301px top;}
+    33% {background-position: -628px top;}
+    66% {background-position: -948px top;}
+  }
+
+  .crazy:hover .crazy2, .crazy:hover .crazy3 {
+    animation-play-state: paused;
+    transform: rotateZ(30deg); 
+  }
+
+    </style>
+  </head>
+  <body>
+<div class="heart">
+<div class="heart-2"></div>
+  <div class="heart-3"></div>
+</div>
+
+<div class="deb">
+  <div class="deb2"></div>
+<div class="deb3"></div>
+</div>
+
+<div class="heartbroke">
+  <div class="hb3"></div>
+</div>
+
+<div class="star">
+  <div class="star2"></div>
+<div class="star3"></div>
+</div>
+
+<div class="crazy">
+  <div class="crazy2"></div>
+  <div class="crazy3"></div>
+</div>
+
+  </body>
+</html>
