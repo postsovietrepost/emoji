@@ -15,26 +15,25 @@ html {
 }
 
 
-    .o1 {
+    /* .o1 {
       background: url('images/o5.png');
-      width: 160px;
+      width: 400px;
       height: 101px;
-
       display: block;
-      /* margin: 100px auto; */
       animation: o1 2s alternate infinite;
       position: absolute;
-      background-position: -0 top;
+      background-position: 0px top;
+      background-size: auto 100%;
     }
     .o1-h {
       background: url('images/o5.png');
-      width: 160px;
+      width: 150px;
       height: 101px;
       display: block;
-      left: 0;
+      left: -27px;
       right: 0;
-
-      background-position: -160px top;
+      background-position: -100px top;
+      background-size: auto 100%;
       position: absolute;
       animation: h1 2s steps(1) alternate infinite;
       animation-play-state: running;
@@ -42,33 +41,76 @@ html {
 
     .o1-f {
       background: url('images/o5.png');
-      width: 133px;
+      width: 150px;
       height: 119px;
       display: block;
-      left: 0;
+      left: -21px;
       right: 0;
-
-      background-position: -640px top;
+      top: -13px;
+      background-position: -400px top;
+      background-size: auto 100%;
       position: absolute;
       animation: f1 2s steps(1) alternate infinite;
       animation-play-state: running;
+    } */
+
+    .o1 {
+      background: url('images/o6.png');
+      width: 391px;
+    height: 374px;
+    left: 40px;
+      display: block;
+      /* margin: 100px auto; */
+      animation: o1 2s alternate infinite;
+      position: absolute;
+      background-position: 0px top;
+      background-size: auto 100%;
+    }
+    .o1-h {
+      background: url('images/o6.png');
+      width: 430px;
+  height: 393px;
+  display: block;
+  left: -51px;
+  top: -33px;
+      right: 0;
+      background-position: -100px top;
+      background-size: auto 100%;
+      position: absolute;
+      animation: h1 2s steps(1) alternate infinite;
+      animation-play-state: paused;
+    }
+
+    .o1-f {
+      background: url('images/o6.png');
+      width: 346px;
+      height: 353px;
+      display: block;
+      left: -27px;
+      right: 0;
+      top: 23px;
+      background-position: -400px top;
+      background-size: auto 100%;
+      position: absolute;
+      animation: f1 2s steps(1) alternate infinite;
+      animation-play-state: paused;
     }
     .o1:hover .o1-h, .o1:hover .o1-f {
-      animation-play-state: paused;
+      animation-play-state: running;
     }
     /* @keyframes o1 {
 
        100% {background-position: 0px top;}
     } */
     @keyframes h1 {
-      0% {background-position: -160px top;}
-      33% {background-position: -320px top;}
-      66% {background-position: -480px top;}
+      0% {background-position: -320px top;}
+      33% {background-position: -750px top;}
+      66% {background-position: -1140px top;}
     }
     @keyframes f1 {
-      0% {background-position: -640px top;}
-      33% {background-position: -800px top;}
-      66% {background-position: -960px top;}
+      0% {background-position: -400% top;}
+      33% {background-position: -500% top;}
+      66% {background-position: -600% top;}
     }
 
 
